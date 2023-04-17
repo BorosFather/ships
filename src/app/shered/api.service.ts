@@ -31,7 +31,8 @@ export class ApiService {
   }
 
   addShip(ship: any) {
-    let url = 'http://localhost:8000/ships';
+    let endpoint = "ships";
+    let url = this.host + endpoint;
     let headerObj = new HttpHeaders({
       'Content-Type': 'application/json'
     });

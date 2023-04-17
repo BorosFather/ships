@@ -50,8 +50,8 @@ export class ShipComponent {
     });
   }
 
-  saveButotn() {
-
+  saveButtotn() {
+    console.log("megy");
     let ship = {
       name: this.shipForm.value.name,
       length: this.shipForm.value.length,

@@ -1,1 +1,36 @@
-<p>ship works!</p>
+<!-- /*
+* File: taulo.component.html
+* Author: Boros Zoltán
+* Copyright: 2023 Borosfather
+* Group: Szoft II N
+* Date: 2023-03-08
+* Github: https://github.com/borosfather
+* Licenc: GNU GPL
+*/ -->
+
+<div class="container mt-3">
+    <h1 class="text-center">Tanulók</h1>
+
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nema</th>
+          <th scope="col">Length</th>
+          <th scope="col">Price</th>
+          <th scope="col">Person</th>
+          <th scope="col">Trailer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="col" *ngFor="let ship of ships">
+          <td>{{ship.id}}</td>
+          <td>{{ship.name}}</td>
+          <td>{{ship.length}}</td>
+          <td>{{ship.price}}</td>
+          <td>{{ship.person}}</td>
+          <td>{{ship.trailer}}</td>
+        </tr>
+      </tbody>
+  </table>
+</div>
